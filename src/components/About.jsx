@@ -1,65 +1,139 @@
-import about from "../Lottie/about-us.json";
-import Lottie from "lottie-react";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+import SectionBtn from "./btn's/SectionBtn";
+import ContentGap from "./gap's/ContentGap";
+import SectionTitle from "./shared/SectionTitle";
 import SectionWrapper from "./wrapper/SectionWrapper";
+import { FaCheck } from "react-icons/fa6";
+import { MdOutlineEmail, MdOutlineArrowOutward } from "react-icons/md";
+import { LuPhone } from "react-icons/lu";
+import { FaPen, FaMusic, FaCoffee } from "react-icons/fa";
+import { GiCommercialAirplane, GiFlyingDagger } from "react-icons/gi";
+import { RiQuillPenFill } from "react-icons/ri";
+
+const interest = [
+  {
+    name: "Drawing",
+    icon: <FaPen />,
+  },
+  {
+    name: "Travel",
+    icon: <GiCommercialAirplane />,
+  },
+  {
+    name: "Naath",
+    icon: <FaMusic />,
+  },
+  {
+    name: "Coffee",
+    icon: <FaCoffee />,
+  },
+  {
+    name: "Flying",
+    icon: <GiFlyingDagger />,
+  },
+  {
+    name: "Art",
+    icon: <RiQuillPenFill />,
+  },
+];
 
 const About = () => {
-  useEffect(() => {
-    Aos.init({ duration: 500 });
-  }, []);
   return (
     <SectionWrapper>
       <div id="about" className="">
-        <h1 className="font-semibold text-4xl text-[#28e98c] underline decoration-wavy ">
-          About Me
-        </h1>
-        <div className="lg:flex items-center justify-center gap-10">
-          <div
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-            className="lg:w-2/3 lg:mt-0 lg:mb-0 mb-7 mt-10 w-full"
-          >
-            <Lottie animationData={about}></Lottie>
+        <div className="flex items-center justify-between">
+          <div>
+            <SectionBtn>About me</SectionBtn>
+            <SectionTitle
+              title1={"Professional "}
+              title2={"Problem Solutions"}
+            />
+            <h1 className="text-5xl mt-2">For Digital Products</h1>
+            <p className="mt-6">
+              Hello! I’m Mohammad Apon. Web Developer with over 2 years of
+              experience. <br /> Experienced with all stages of the development
+              cycle for dynamic web <br /> projects. Having an in-depth
+              knowledge including advanced HTML5, <br /> CSS3, JavaScript,
+              ReactJS, NextJS. Strong background in management <br /> and
+              leadership.
+            </p>
+            <div className="grid grid-cols-2 gap-5 mt-6">
+              <div className="flex text-2xl items-center gap-3">
+                <FaCheck className="text-primary" />
+                Web Development
+              </div>
+              <div className="flex text-2xl items-center gap-3">
+                <FaCheck className="text-primary" />
+                Web Design
+              </div>
+              <div className="flex text-2xl items-center gap-3">
+                <FaCheck className="text-primary" />
+                Software Development
+              </div>
+              <div className="flex text-2xl items-center gap-3">
+                <FaCheck className="text-primary" />
+                Branding & Design
+              </div>
+            </div>
+            <ContentGap />
+            <div className="rounded-[15px] bg-lighter flex items-center justify-between w-full px-10 py-5">
+              <div
+                className="flex items-center gap-3 first-letter:
+              "
+              >
+                <div className="primary-bg w-[45px] h-[45px] rounded-[50%] flex items-center justify-center text-black text-[20px]">
+                  <LuPhone />
+                </div>
+                <div>
+                  <span className="font-semibold text-[14px]">Make A Call</span>
+                  <p className="font-semibold text-[18px]">+880-1881105726</p>
+                </div>
+              </div>
+              <div
+                className="flex items-center gap-3 first-letter:
+              "
+              >
+                <div className="primary-bg w-[45px] h-[45px] rounded-[50%] flex items-center justify-center text-black text-[20px]">
+                  <MdOutlineEmail />
+                </div>
+                <div>
+                  <span className="font-semibold text-[14px]">Email Us</span>
+                  <p className="font-semibold text-[18px]">
+                    mohammadapon11@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-            className="lg:w-3/4 text-white"
-          >
-            <h1 className="font-semibold">
-              I am <span className="text-[#28e98c] text-xl">Mohammad Apon</span>
-              . From Mymensingh Netrakona. I am studying computer science at
-              Kishoreganj Polytechnic Institute. I have been doing the web
-              development course with Programming Hero for the past six months.
-              I am among the top candidates out there. Alhamdulillah I was able
-              to follow all their rules and get all the rewards. I’m passionate
-              about everything that goes into making websites work well and look
-              beautiful. The web is my passion because it’s where I can find the
-              most exciting projects to work on. It’s also where I get to
-              express my creativity in ways that are hard to find elsewhere.I
-              love working with clients who want something more than just
-              another website; they want their site to be more than just another
-              website. They want it to be memorable, engaging, and valuable—and
-              that’s where I come in!
-            </h1>
-            <h1 className="text-xl font-semibold text-[#28e98c] mt-2">
-              My Skills
-            </h1>
-            <h1>
-              <span className="font-bold">Expertise:</span> HTML | CSS |
-              React.js | Bootstrap | Tailwind CSS | React Bootstrap | DaisyUI |
-              Flowbite | Firebase.
-            </h1>
-            <h1>
-              <span className="font-bold">Comfortable:</span> JavaScript And ES6
-              | Node.js | Express.js | MongoDB | React Router.
-            </h1>
-            <h1>
-              <span className="font-bold">Familiar:</span> ReactQuery | React
-              Hook Form | Jsonwebtoken | Pagination and Debugging.
-            </h1>
+          <div className="relative">
+            <div className="bg-lighter relative px-2 pt-4 after:content-[''] after:w-[100%] after:h-[100%] after:absolute after:-top-[50px] after:-left-[50px] after:-z-[1] z-[100] after:border-[7px] after:border-[#28e98c]">
+              <img
+                className="w-[460px] h-[500px] mx-auto"
+                src="about.png"
+                alt=""
+              />
+            </div>
+            <div className="bg-white rounded-[24px] text-black font-semibold py-2 px-4 w-[57%] flex items-center justify-between absolute top-2/4 z-[101] -left-[40%]">
+              <img src="/aboutIcon.png" alt="" />
+              <span>Experience Developer</span>
+              <MdOutlineArrowOutward />
+            </div>
+          </div>
+        </div>
+        <ContentGap />
+        <div className="w-[70%] mx-auto">
+          <h1 className="text-center text-3xl">MY INTERESTS</h1>
+          <ContentGap />
+          <div className="flex items-center justify-between">
+            {interest.map((item, index) => (
+              <div className="group">
+                <div className="w-[90px] h-[90px] rounded-[50%] border border-[#28e98c] flex items-center justify-center text-[#28e98c] text-[30px] group-hover:bg-gradient-to-r  group-hover:from-[#28e98c] group-hover:to-[#26ebda] group-hover:text-black transition-all  duration-300">
+                  {item?.icon}
+                </div>
+                <h4 className="text-[24px] mt-2 translate-y-[6px] group-hover:translate-y-0 opacity-0  group-hover:opacity-100 transition-all duration-300 text-white">
+                  {item?.name}
+                </h4>
+              </div>
+            ))}
           </div>
         </div>
       </div>

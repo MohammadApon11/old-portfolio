@@ -14,13 +14,13 @@ const Home = () => {
       <Navbar />
       <Banner />
       <SectionGap />
+      <About />
+      <SectionGap />
       <Experience />
       <SectionGap />
       <Skills />
       <SectionGap />
       <Projects />
-      <SectionGap />
-      <About />
       <SectionGap />
       <Contact />
       <SectionGap />

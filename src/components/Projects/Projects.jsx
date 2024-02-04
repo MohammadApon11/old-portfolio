@@ -1,94 +1,74 @@
+import { useState } from "react";
+import { projectData } from "../../data/projectsData";
 import ProjectBtn from "../btn's/ProjectBtn";
 import SectionBtn from "../btn's/SectionBtn";
 import ContentGap from "../gap's/ContentGap";
-import SectionGap from "../gap's/SectionGap";
 import SectionTitle from "../shared/SectionTitle";
 import SectionWrapper from "../wrapper/SectionWrapper";
-import { BsArrowRight } from "react-icons/bs";
 
 const Projects = () => {
+  const [showAll, setShowAll] = useState(false);
   return (
     <SectionWrapper>
       <div id="projects" className="">
         <SectionBtn>Projects</SectionBtn>
         <SectionTitle title1={"Featured"} title2={"Projects"} />
         <ContentGap />
-        <ContentGap />
-        <div>
-          <div
-            className="group transition-all duration-300"
-            href="https://inspiring-bonbon-b9bff1.netlify.app/"
-            target="blank"
-          >
-            <img className="rounded-[40px]" src="pro1-copy2.png" alt="" />
-            <div className="flex items-center justify-between mt-8">
-              <h4 className="text-3xl "> Makinft - NFT Marketplace </h4>
-              <div className="flex items-center gap-4">
-                <ProjectBtn to="" bg={true}>
-                  Live Project
-                </ProjectBtn>
-                <ProjectBtn to="" bg={false}>
-                  Github
-                </ProjectBtn>
-              </div>
-            </div>
-          </div>
-          <ContentGap />
-          <ContentGap />
-          <div className="flex items-center gap-10">
-            <div className="group relative" href="">
-              <img className="rounded-[30px]" src="pro4.png" alt="" />
-              <div className="flex items-center gap-4 mt-4 absolute top-2 left-5">
-                <ProjectBtn color="white" to="" bg={true}>
-                  Live Project
-                </ProjectBtn>
-                <ProjectBtn border="white" to="" bg={false}>
-                  Github
-                </ProjectBtn>
-              </div>
-              <h5 className="mt-4 text-3xl  transition-all duration-300">
-                Sports World - Learing Management 
-              </h5>
-            </div>
-            <div className="group relative" href="">
-              <div className="relative">
-                <img className="rounded-[30px]" src="pro3.png" alt="" />
-                <div className="flex items-center gap-4 mt-4 absolute top-2 left-5">
-                  <ProjectBtn color="white" to="" bg={true}>
-                    Live Project
-                  </ProjectBtn>
-                  <ProjectBtn border="white" to="" bg={false}>
-                    Github
-                  </ProjectBtn>
+        <div className="grid grid-cols-3 gap-[24px]">
+          {!showAll
+            ? projectData?.map(
+                (item, index) =>
+                  index < 6 && (
+                    <div
+                      className="relative group bg-cover bg-center bg-no-repeat h-[300px] flex items-center justify-center hover:border-[15px] transition-all duration-300"
+                      style={{ backgroundImage: `url(${item?.image})` }}
+                      key={index}
+                    >
+                      <div className="bg-white w-[100%] h-[100%] mx-auto transition-all duration-300 scale-[.04] group-hover:scale-100 opacity-0 group-hover:opacity-[100%]"></div>
+                      <div className="absolute -z-[1] group-hover:z-[100]">
+                        <div className="flex items-center justify-center gap-2">
+                          <ProjectBtn to={item?.live}>Live Project</ProjectBtn>
+                          <ProjectBtn to={item?.git} bg={false}>
+                            Github
+                          </ProjectBtn>
+                        </div>
+                        <h6 className="mt-4 text-black font-semibold">
+                          {item?.title}
+                        </h6>
+                      </div>
+                    </div>
+                  )
+              )
+            : projectData?.map((item, index) => (
+                <div
+                  className="relative group bg-cover bg-center bg-no-repeat h-[300px] flex items-center justify-center hover:border-[15px] transition-all duration-300"
+                  style={{ backgroundImage: `url(${item?.image})` }}
+                  key={index}
+                >
+                  <div className="bg-white w-[100%] h-[100%] mx-auto transition-all duration-300 scale-[.04] group-hover:scale-100 opacity-0 group-hover:opacity-[100%]"></div>
+                  <div className="absolute -z-[1] group-hover:z-[100]">
+                    <div className="flex items-center justify-center gap-2">
+                      <ProjectBtn to={item?.live}>Live Project</ProjectBtn>
+                      <ProjectBtn to={item?.git} bg={false}>
+                        Github
+                      </ProjectBtn>
+                    </div>
+                    <h6 className="mt-4 text-black font-semibold">
+                      {item?.title}
+                    </h6>
+                  </div>
                 </div>
-                <h5 className="mt-4 text-3xl  transition-all duration-300">
-                  Toy House - Shopping Mall
-                </h5>
-              </div>
-            </div>
-          </div>
-          <ContentGap />
-          <ContentGap />
-          <div
-            className="group transition-all duration-300"
-            href="https://inspiring-bonbon-b9bff1.netlify.app/"
-            target="blank"
+              ))}
+        </div>
+        <ContentGap />
+        <ContentGap />
+        <div className="flex items-center justify-center">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="text-black w-[200px] py-3 rounded-[24px] border hover:bg-transparent hover:text-[#28e98c] transition-all duration-300 text-[14px] font-semibold bg-[#28e98c] border-[#28e98c] hover:border-[#28e98c]"
           >
-            <img className="rounded-[40px]" src="pro2.png" alt="" />
-            <div className="flex items-center justify-between mt-8">
-              <h4 className="text-3xl ">
-                Mediusware - Software Company Portfolio{" "}
-              </h4>
-              <div className="flex items-center gap-4">
-                <ProjectBtn to="" bg={true}>
-                  Live Project
-                </ProjectBtn>
-                <ProjectBtn to="" bg={false}>
-                  Github
-                </ProjectBtn>
-              </div>
-            </div>
-          </div>
+            {!showAll ? "See More" : "Less More"}
+          </button>
         </div>
       </div>
     </SectionWrapper>
