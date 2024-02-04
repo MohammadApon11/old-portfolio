@@ -1,0 +1,40 @@
+.img-container {
+    width: 580px;
+    height: 400px;
+    background: #000;
+    background-position: top;
+    transition: ease-in-out 20s;
+}
+
+.img1 {
+    background-image: url(../../assets/project1.png);
+    background-size: cover;
+}
+
+.img2 {
+    background-image: url(../../assets/project2.png);
+    background-size: cover;
+}
+
+.img3 {
+    background-image: url(../../assets/project3.png);
+    background-size: cover;
+}
+
+.img1:hover {
+    background-position: bottom;
+}
+
+.img2:hover {
+    background-position: bottom;
+}
+
+.img3:hover {
+    background-position: bottom;
+}
+
+@media only screen and (max-width:768px) {
+    .img-container{
+        width: 370px;
+    }
+}
