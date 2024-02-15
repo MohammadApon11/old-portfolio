@@ -23,11 +23,11 @@ const Skills = () => {
         <SectionBtn>my skills</SectionBtn>
         <SectionTitle title1={"My"} title2={"Advantages"} />
         <ContentGap />
-        <div className="grid grid-cols-6 gap-[20px]">
+        <div className="grid xl:grid-cols-6 lg:grid-cols-5  md:grid-cols-4 sm:grid-cols-3 mobile:grid-cols-3 xs:grid-cols-2 xxs:grid-cols-1 gap-[20px]">
           {skilssData.map((item, index) => (
             <div
               key={index}
-              className="rounded-md  border hover:border-[#28e98c] transition-all duration-300 border-[hsla(0,0%,100%,.1)] bg-lighter py-[25px] px-[20px] mx-auto w-[100%] text-center group"
+              className="rounded-md  border hover:border-[#28e98c] transition-all duration-300 border-[hsla(0,0%,100%,.1)] bg-lighter py-[25px] px-[20px] mx-auto w-[100%] text-center group text-gray-300"
             >
               <img className="w-[70px] mx-auto" src={item.image} alt="" />
               <h6 className="text-[22px] mt-4">{item?.name}</h6>

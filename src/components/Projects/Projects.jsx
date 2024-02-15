@@ -14,7 +14,7 @@ const Projects = () => {
         <SectionBtn>Projects</SectionBtn>
         <SectionTitle title1={"Featured"} title2={"Projects"} />
         <ContentGap />
-        <div className="grid grid-cols-3 gap-[24px]">
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-[24px]">
           {!showAll
             ? projectData?.map(
                 (item, index) =>
@@ -25,14 +25,14 @@ const Projects = () => {
                       key={index}
                     >
                       <div className="bg-white w-[100%] h-[100%] mx-auto transition-all duration-300 scale-[.04] group-hover:scale-100 opacity-0 group-hover:opacity-[100%]"></div>
-                      <div className="absolute -z-[1] group-hover:z-[100]">
+                      <div className="absolute text-center -z-[1] group-hover:z-[100]">
                         <div className="flex items-center justify-center gap-2">
                           <ProjectBtn to={item?.live}>Live Project</ProjectBtn>
                           <ProjectBtn to={item?.git} bg={false}>
                             Github
                           </ProjectBtn>
                         </div>
-                        <h6 className="mt-4 text-black font-semibold">
+                        <h6 className="mt-4 text-black font-semibold xxs:max-mobile:px-[5px]">
                           {item?.title}
                         </h6>
                       </div>
@@ -46,14 +46,14 @@ const Projects = () => {
                   key={index}
                 >
                   <div className="bg-white w-[100%] h-[100%] mx-auto transition-all duration-300 scale-[.04] group-hover:scale-100 opacity-0 group-hover:opacity-[100%]"></div>
-                  <div className="absolute -z-[1] group-hover:z-[100]">
+                  <div className="absolute text-center -z-[1] group-hover:z-[100]">
                     <div className="flex items-center justify-center gap-2">
                       <ProjectBtn to={item?.live}>Live Project</ProjectBtn>
                       <ProjectBtn to={item?.git} bg={false}>
                         Github
                       </ProjectBtn>
                     </div>
-                    <h6 className="mt-4 text-black font-semibold">
+                    <h6 className="mt-4 text-black font-semibold xxs:max-mobile:px-[5px]">
                       {item?.title}
                     </h6>
                   </div>
@@ -61,8 +61,7 @@ const Projects = () => {
               ))}
         </div>
         <ContentGap />
-        <ContentGap />
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center lg:mt-[30px] xxs:mt-[15px]">
           <button
             onClick={() => setShowAll(!showAll)}
             className="text-black w-[200px] py-3 rounded-[24px] border hover:bg-transparent hover:text-[#28e98c] transition-all duration-300 text-[14px] font-semibold bg-[#28e98c] border-[#28e98c] hover:border-[#28e98c]"

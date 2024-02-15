@@ -1,42 +1,43 @@
 import bannerLottie from "../Lottie/banner.json";
 import Lottie from "lottie-react";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
-import resume from "../../public/Front-End Developer Resume Of Mohammad Apon.pdf";
+import resume from "../assets/Web Developer Resume of Mohammad Apon.pdf";
 import { BiDownload } from "react-icons/bi";
 import SectionWrapper from "./wrapper/SectionWrapper";
 
 const Banner = () => {
-  useEffect(() => {
-    Aos.init();
-  }, []);
   return (
     <SectionWrapper>
       <div
         id="home"
-        className="flex items-center justify-between lg:pb-0 pb-5 lg:pt-0 pt-5 lg:pl-0 pl-2 overflow-hidden"
+        className="flex items-center justify-between overflow-hidden"
       >
-        <div data-aos="fade-right" className="flex flex-col">
-          <p className="lg:text-4xl text-xl">Hello, I am</p>
-          <h1 className="text-[#28e98c] lg:text-7xl text-2xl">Mohammad Apon</h1>
-          <h1 className="lg:text-6xl text-2xl">Web Developer</h1>
-          <p className="lg:text-lg text-xs mt-14">
-            I design and code beautifully simple things and I love <br /> what I do.
-            Just simple like that!
+        <div className="flex flex-col text-gray-300">
+          <p className="xl:text-4xl lg:text-3xl md:text-[27px] sm:text-[20px] xs:text-[26px] xxs:text-[23px] xxs:max-sm:mt-5">
+            Hello, I am
           </p>
-          <div className="flex lg:gap-4 gap-2 mt-6">
+          <h1 className="text-[#28e98c] lg:mt-3 xl:text-7xl lg:text-6xl md:text-5xl sm:text-[34px] xs:text-[40px] xxs:text-[35px]">
+            Mohammad Apon
+          </h1>
+          <h1 className="xl:text-6xl lg:text-5xl md:text-4xl sm:text-[28px] xs:text-3xl xxs:text-[28px] md:mt-1 xxs:max-md:-mt-1">
+            Web Developer
+          </h1>
+          <p className="xl:text-lg md:text-[16px] text-[16px] xl:mt-14 lg:mt-10 md:mt-7 sm:mt-5 xxs:max-sm:mt-4 xxs:max-sm:w-[75%]">
+            I design and code beautifully simple{" "}
+            <br className="md:hidden sm:max-md:block hidden" /> things and I love{" "}
+            <br className="xxs:max-md:hidden block" /> what I do. Just{" "}
+            <br className="md:hidden sm:max-md:block hidden" /> simple like that!
+          </p>
+          <div className="flex lg:mt-6 md:mt-5 mt-4">
             <a
               href={resume}
-              download="Front-End Developer Resume Of Mohammad Apon.pdf"
-              className="bg-[#28e98c] lg:px-6 lg:py-2 lg:text-[15px] text-[10px] cursor-pointer text-black px-3 py-2 font-semibold hover:bg-black hover:text-[#28e98c] transition-all duration-300 flex items-center lg:gap-2 border-2 border-[#28e98c] rounded-[24px]"
+              download="Web Developer Resume Of Mohammad Apon.pdf"
+              className="bg-[#28e98c] lg:px-6 px-5 lg:py-2 py-1 text-[16px] cursor-pointer text-black font-medium hover:bg-black hover:text-[#28e98c] transition-all duration-300 flex items-center gap-2 border-2 border-[#28e98c] rounded-[24px]"
             >
-              Download Resume{" "}
-              <BiDownload className="text-[23px] lg:visible invisible" />
+              Resume <BiDownload className="lg:text-[23px] text-[20px]" />
             </a>
           </div>
         </div>
-        <div data-aos="fade-left" className="w-[45%]">
+        <div className="xl:w-[45%] md:w-[44%] sm:w-[50%] xxs:max-sm:hidden">
           <Lottie animationData={bannerLottie}></Lottie>
         </div>
       </div>
