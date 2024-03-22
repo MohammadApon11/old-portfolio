@@ -6,6 +6,18 @@ export const projectData = [
     git: "https://github.com/MohammadApon11/nft-solutya",
   },
   {
+    title: "Jobs Gonjo - Job Portal",
+    image: "/Jobs-gonjo.png",
+    live: "https://jobs-portal-swx6.vercel.app/",
+    git: "https://github.com/MohammadApon11/jobs-portal",
+  },
+  {
+    title: "Relaxa music - Music Listener website",
+    image: "/relaxa-music.png",
+    live: "https://relaxa-music-client.vercel.app/",
+    git: "https://github.com/MohammadApon11/relaxa-music",
+  },
+  {
     title: "Meidusware - SOFTWARE COMPANY",
     image: "/pro2.png",
     live: "https://mediusware-new.vercel.app/",
@@ -46,11 +58,5 @@ export const projectData = [
     image: "/pro8.png",
     live: "https://taskinator-own.vercel.app/",
     git: "https://github.com/MohammadApon11/taskinator-own",
-  },
-  {
-    title: "Jobs Gonjo - A Job Portal",
-    image: "/pro9.png",
-    live: "https://jobs-portal-swx6.vercel.app/",
-    git: "https://github.com/MohammadApon11/jobs-portal",
   },
 ];

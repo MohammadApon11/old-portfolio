@@ -66,7 +66,7 @@ const Projects = () => {
             onClick={() => setShowAll(!showAll)}
             className="text-black w-[200px] py-3 rounded-[24px] border hover:bg-transparent hover:text-[#28e98c] transition-all duration-300 text-[14px] font-semibold bg-[#28e98c] border-[#28e98c] hover:border-[#28e98c]"
           >
-            {!showAll ? "See More" : "Less More"}
+            {!showAll ? "Show more" : "Show less"}
           </button>
         </div>
       </div>

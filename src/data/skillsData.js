@@ -16,7 +16,12 @@ import sqlite from "../assets/sqlite2.svg";
 import sass from "../assets/sass.svg";
 import material from "../assets/material-ui.png";
 import jquery from "../assets/jquery.png";
-export const skilssData = [
+import ts from "../assets/typescript.svg";
+import python from "../assets/python.svg";
+import c from "../assets/c.svg";
+import cplus from "../assets/c++.svg";
+
+export const skillsData = [
   {
     image: js,
     name: "JavaScript",
@@ -31,6 +36,51 @@ export const skilssData = [
     image: nextjs,
     name: "NextJS",
     percent: "80%",
+  },
+  {
+    image: nodejs,
+    name: "NodeJS",
+    percent: "75%",
+  },
+  {
+    image: express,
+    name: "ExpressJS",
+    percent: "80%",
+  },
+  {
+    image: mongodb,
+    name: "MongoDB",
+    percent: "82%",
+  },
+  {
+    image: redux,
+    name: "Redux",
+    percent: "75%",
+  },
+  {
+    image: ts,
+    name: "TypeScript",
+    percent: "50%",
+  },
+  {
+    image: python,
+    name: "Python",
+    percent: "54%",
+  },
+  {
+    image: c,
+    name: "C",
+    percent: "30%",
+  },
+  {
+    image: cplus,
+    name: "C++",
+    percent: "40%",
+  },
+  {
+    image: tailwind,
+    name: "Tailwind",
+    percent: "95%",
   },
   {
     image: html,
@@ -62,27 +112,6 @@ export const skilssData = [
     name: "SASS",
     percent: "72%",
   },
-  {
-    image: nodejs,
-    name: "NodeJS",
-    percent: "75%",
-  },
-  {
-    image: express,
-    name: "ExpressJS",
-    percent: "80%",
-  },
-  {
-    image: mongodb,
-    name: "MongoDB",
-    percent: "82%",
-  },
-  {
-    image: redux,
-    name: "Redux",
-    percent: "75%",
-  },
-
   {
     image: sqlite,
     name: "SQLite",

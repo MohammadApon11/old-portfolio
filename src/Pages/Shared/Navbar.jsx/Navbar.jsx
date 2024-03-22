@@ -16,9 +16,10 @@ const Navbar = () => {
 
   const navLinks = [
     { path: "home", title: "Home", icon: <IoHomeOutline /> },
+    { path: "about", title: "About", icon: <FaRegUser /> },
+    { path: "experience", title: "Experience", icon: <FaRegUser /> },
     { path: "skills", title: "Skills", icon: <GiSkills /> },
     { path: "projects", title: "Projects", icon: <GoProjectRoadmap /> },
-    { path: "about", title: "About", icon: <FaRegUser /> },
     { path: "contact", title: "Contact", icon: <MdOutlineEmail /> },
   ];
 
@@ -45,9 +46,9 @@ const Navbar = () => {
       >
         <button className="lg:text-xl flex items-center gap-2">
           <img className="w-[40px]" src="logo.png" />{" "}
-          <span className="xxs:max-xs:hidden">MOHAMMAD APON</span>
+          <span className="xxs:max-xs:hidden text-gray-300">MOHAMMAD APON</span>
         </button>
-        <div className="px-1 flex items-center xl:gap-7 lg:gap-3 xxs:max-lg:hidden">
+        <div className="px-1 flex items-center xl:gap-3 lg:gap-3 xxs:max-lg:hidden">
           {navLinks.map((item, index) => (
             <Link
               key={index}
@@ -56,7 +57,7 @@ const Navbar = () => {
               smooth={true}
               offset={20}
               duration={1000}
-              className="text-[16px] cursor-pointer px-3 xl:py-10 lg:py-7"
+              className="text-[16px] cursor-pointer px-3 xl:py-10 lg:py-7 text-gray-300 flex items-center gap-1"
             >
               {item.title}
             </Link>
