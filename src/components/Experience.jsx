@@ -15,7 +15,7 @@ const Experience = () => {
         <div className="lg:w-[70%] w-[100%] group">
           <SectionBtn>My Experience</SectionBtn>
           <SectionTitle title1={"Real"} title2={"Problem Solutions"} />
-          <h1 className="2xl:text-5xl xl:text-[45px] sm:text-[40px] xxs:text-[35px] 2xl:mt-2 text-gray-300">
+          <h1 className="2xl:text-5xl xl:text-[45px] sm:text-[40px] xxs:text-[35px] 2xl:mt-1 xl:-mt-2 sm:-mt-3 text-gray-300">
             Experience
           </h1>
           <a

@@ -2,8 +2,8 @@ export const projectData = [
   {
     title: "Makinft NFT MARKETPLACE",
     image: "/pro1.png",
-    live: "https://inspiring-bonbon-b9bff1.netlify.app/",
-    git: "https://github.com/MohammadApon11/nft-solutya",
+    live: "https://maki-nft-nextjs.vercel.app/",
+    git: "https://github.com/MohammadApon11/MakiNFT-NEXTJS",
   },
   {
     title: "Jobs Gonjo - Job Portal",
