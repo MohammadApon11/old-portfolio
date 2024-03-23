@@ -8,11 +8,8 @@ import { Link } from "react-router-dom";
 const Experience = () => {
   return (
     <SectionWrapper>
-      <div id="experience" className="flex items-center justify-between">
-        <div className="bg-[#1f1f1f] border border-[hsla(0,0%,100%,.1)] hover:border-[#28e98c] transition-all duration-300 rounded-[50%] p-10 hidden lg:block">
-          <img className="w-[150px]" src="logo.png" alt="" />
-        </div>
-        <div className="lg:w-[70%] w-[100%] group">
+      <div id="experience">
+        <div className="">
           <SectionBtn>My Experience</SectionBtn>
           <SectionTitle title1={"Real"} title2={"Problem Solutions"} />
           <h1 className="2xl:text-5xl xl:text-[45px] sm:text-[40px] xxs:text-[35px] 2xl:mt-1 xl:-mt-2 sm:-mt-3 text-gray-300">
@@ -21,7 +18,7 @@ const Experience = () => {
           <a
             href="https://solutya.com/"
             target="blank"
-            className="w-[100%] px-[24px] py-12 mt-10 mb-[3px] mr-1 transition-all duration-300 rounded-md group flex items-start gap-5 shadow-sm shadow-[#28e98c]"
+            className="w-[100%] px-[24px] py-12 mt-10 mb-[3px] mr-1 transition-all duration-300 rounded-md group flex items-start gap-5 shadow-sm shadow-[#28e98c] group"
           >
             <button className="bg-black w-[40px] p-3 rounded-[50%] group-hover:bg-[#28e98c] border border-[hsla(0,0%,100%,.1)] group-hover:text-black transition-all duration-300 max-mobile:hidden block">
               <GoArrowUpRight />
