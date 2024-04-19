@@ -1,5 +1,18 @@
 export const projectData = [
   {
+    title: "E-Commerce",
+    image: "/bazaar.png",
+    live: "https://next-bazaar-sigma.vercel.app/",
+    git: "https://github.com/MohammadApon11/BAZAAR",
+  },
+  {
+    title: "Chat-Application",
+    image: "/chat-app.png",
+    live: "https://own-chat-bot.onrender.com/",
+    git: "https://github.com/MohammadApon11/own-chat-bot",
+  },
+
+  {
     title: "Makinft NFT MARKETPLACE",
     image: "/pro1.png",
     live: "https://maki-nft-nextjs.vercel.app/",

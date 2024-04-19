@@ -1,6 +1,6 @@
 import bannerLottie from "../Lottie/banner.json";
 import Lottie from "lottie-react";
-import resume from "../assets/Web Developer Resume of Mohammad Apon.pdf";
+import resume from "../assets/Full-stack Developer Resume of Mohammad Apon.pdf";
 import { BiDownload } from "react-icons/bi";
 import SectionWrapper from "./wrapper/SectionWrapper";
 
@@ -19,7 +19,7 @@ const Banner = () => {
             Mohammad Apon
           </h1>
           <h1 className="xl:text-6xl lg:text-5xl md:text-4xl sm:text-[28px] xs:text-3xl xxs:text-[28px] md:mt-1 xxs:max-md:-mt-1">
-            Web Developer
+            Full-stack Developer
           </h1>
           <p className="xl:text-lg md:text-[16px] text-[16px] xl:mt-14 lg:mt-10 md:mt-7 sm:mt-5 xxs:max-sm:mt-4 xxs:max-sm:w-[75%]">
             I design and code beautifully simple{" "}
@@ -30,7 +30,7 @@ const Banner = () => {
           <div className="flex lg:mt-6 md:mt-5 mt-4">
             <a
               href={resume}
-              download="Web Developer Resume Of Mohammad Apon.pdf"
+              download="Full-stack Developer Resume of Mohammad Apon.pdf"
               className="bg-[#28e98c] lg:px-6 px-5 lg:py-2 py-1 text-[16px] cursor-pointer text-black font-medium hover:bg-black hover:text-[#28e98c] transition-all duration-300 flex items-center gap-2 border-2 border-[#28e98c] rounded-[24px]"
             >
               Resume <BiDownload className="lg:text-[23px] text-[20px]" />

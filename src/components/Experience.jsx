@@ -24,13 +24,17 @@ const Experience = () => {
               <GoArrowUpRight />
             </button>
             <div className="text-gray-300">
-              <span>July 2023 - February 2024</span>
+              <span>July 2023 - March 2024</span>
               <h3 className="text-3xl mt-3">Web Developer</h3>
               <p className="text-[16px] mt-1">Solutya Pvt. Ltd.</p>
-              <p className="mt-4">
-                - Project Leadership and Launch Success. I spearheaded the
-                development and successful <br /> launch of a cutting-edge
-                application.
+              <p className="mt-4"> 
+                - I've completed three successful web projects with them
+                MERN-stack based, one of which is NFT Marketplace, where my
+                contribution was to develop the complete front end (nextjs), The
+                second project is an e-commerce application, A full-stack web
+                application where I worked on back-end and front-end updates
+                (react + node + mongoDB). And the third project is the employee
+                management system where I worked as a project leader (nextjs).
               </p>
               <div className="mt-4 flex flex-col gap-1">
                 <p className="font-semibold">1. Frontend Development:</p>

@@ -64,7 +64,7 @@ const About = () => {
             <div className="sm:grid grid-cols-2 xs:max-md:flex flex-col xs:max-md:gap-2 xl:text-2xl sm:text-[22px] xxs:text-[23px] 2xl:gap-5 xl:gap-3 md:gap-[9px] 2xl:mt-6 xl:mt-5 xxs:mt-4">
               <div className="flex items-center gap-3">
                 <IoCheckmarkDoneSharp className="text-primary" />
-                Web Development
+                Web Development (MERN)
               </div>
               <div className="flex items-center gap-3">
                 <IoCheckmarkDoneSharp className="text-primary" />
@@ -89,8 +89,12 @@ const About = () => {
                   <LuPhone />
                 </div>
                 <div>
-                  <span className="font-semibold xs:text-[16px] xxs:text-[14px]">Make A Call</span>
-                  <p className="font-semibold xs:text-[18px] xxs:text-[16px]">+880-1881105726</p>
+                  <span className="font-semibold xs:text-[16px] xxs:text-[14px]">
+                    Make A Call
+                  </span>
+                  <p className="font-semibold xs:text-[18px] xxs:text-[16px]">
+                    +880-1881105726
+                  </p>
                 </div>
               </div>
               <div
@@ -101,7 +105,9 @@ const About = () => {
                   <MdOutlineEmail />
                 </div>
                 <div>
-                  <span className="font-semibold xs:text-[16px] xxs:text-[14px]">Email Us</span>
+                  <span className="font-semibold xs:text-[16px] xxs:text-[14px]">
+                    Email Us
+                  </span>
                   <p className="font-semibold xs:text-[18px] xxs:text-[16px]">
                     mohammadapon11@gmail.com
                   </p>
