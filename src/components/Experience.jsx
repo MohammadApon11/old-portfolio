@@ -27,7 +27,7 @@ const Experience = () => {
               <span>July 2023 - March 2024</span>
               <h3 className="text-3xl mt-3">Web Developer</h3>
               <p className="text-[16px] mt-1">Solutya Pvt. Ltd.</p>
-              <p className="mt-4"> 
+              <p className="mt-4">
                 - I've completed three successful web projects with them
                 MERN-stack based, one of which is NFT Marketplace, where my
                 contribution was to develop the complete front end (nextjs), The
@@ -36,65 +36,69 @@ const Experience = () => {
                 (react + node + mongoDB). And the third project is the employee
                 management system where I worked as a project leader (nextjs).
               </p>
-              <div className="mt-4 flex flex-col gap-1">
-                <p className="font-semibold">1. Frontend Development:</p>
-                <p className="ml-2">
-                  • Developed responsive and user-friendly web interfaces using
-                  HTML5, CSS3, and JavaScript.
-                </p>
-                <p className="ml-2">
-                  • Collaborated with the design team to implement UI/UX designs
-                  effectively.
-                </p>
-                <p className="ml-2">
-                  • Ensured cross-browser compatibility and optimized
-                  performance for various devices.
-                </p>
+              <div className="grid grid-cols-2 border mt-4">
+                <div className="flex flex-col gap-1 border-r border-b p-5">
+                  <p className="font-semibold">1. Frontend Development:</p>
+                  <p className="ml-2">
+                    • Developed responsive and user-friendly web interfaces
+                    using HTML5, CSS3, and JavaScript.
+                  </p>
+                  <p className="ml-2">
+                    • Collaborated with the design team to implement UI/UX
+                    designs effectively.
+                  </p>
+                  <p className="ml-2">
+                    • Ensured cross-browser compatibility and optimized
+                    performance for various devices.
+                  </p>
+                </div>
+                <div className="flex-col gap-1 border-b p-5">
+                  <p className="font-semibold">2. Backend Development:</p>
+                  <p className="ml-2">
+                    • Assisted in building RESTful APIs using Node.js and
+                    Express framework.
+                  </p>
+                  <p className="ml-2">
+                    • Implemented CRUD operations to interact with the database
+                    using MongoDB.
+                  </p>
+                  <p className="ml-2">
+                    • Contributed to server-side logic for dynamic content
+                    generation and user authentication.
+                  </p>
+                </div>
+                <div className="flex-col gap-1 border-r p-5">
+                  <p className="font-semibold">3. Continuous Learning:</p>
+                  <p className="ml-2">
+                    • Stayed updated with the latest web development trends and
+                    technologies.
+                  </p>
+                  <p className="ml-2">
+                    • Explored new frameworks and libraries to improve
+                    development efficiency.
+                  </p>
+                  <p className="ml-2">
+                    • Engaged in online courses and workshops to enhance skills
+                    in areas like React.js and Redux.
+                  </p>
+                </div>
+                <div className="flex-col gap-1 p-5">
+                  <p className="font-semibold">
+                    4. Tools and Technologies Used:
+                  </p>
+                  <p className="ml-2">• Languages: HTML5, CSS3, JavaScript</p>
+                  <p className="ml-2">
+                    • Frontend Frameworks/Libraries: React.js, Next.js,
+                    Tailwind, Bootstrap, jQuery
+                  </p>
+                  <p className="ml-2">• Backend: Node.js, Express.js</p>
+                  <p className="ml-2">• Database: MongoDB</p>
+                  <p className="ml-2">• Version Control: Git</p>
+                  <p className="ml-2">• IDEs/Editors: Visual Studio Code</p>
+                  <p className="ml-2">• Collaboration: Slack</p>
+                </div>
               </div>
-              <div className="mt-4 flex-col gap-1">
-                <p className="font-semibold">2. Backend Development:</p>
-                <p className="ml-2">
-                  • Assisted in building RESTful APIs using Node.js and Express
-                  framework.
-                </p>
-                <p className="ml-2">
-                  • Implemented CRUD operations to interact with the database
-                  using MongoDB.
-                </p>
-                <p className="ml-2">
-                  • Contributed to server-side logic for dynamic content
-                  generation and user authentication.
-                </p>
-              </div>
-              <div className="mt-4 flex-col gap-1">
-                <p className="font-semibold">3. Continuous Learning:</p>
-                <p className="ml-2">
-                  • Stayed updated with the latest web development trends and
-                  technologies.
-                </p>
-                <p className="ml-2">
-                  • Explored new frameworks and libraries to improve development
-                  efficiency.
-                </p>
-                <p className="ml-2">
-                  • Engaged in online courses and workshops to enhance skills in
-                  areas like React.js and Redux.
-                </p>
-              </div>
-              <div className="mt-4 flex-col gap-1">
-                <p className="font-semibold">4. Tools and Technologies Used:</p>
-                <p className="ml-2">• Languages: HTML5, CSS3, JavaScript</p>
-                <p className="ml-2">
-                  • Frontend Frameworks/Libraries: React.js, Next.js, Tailwind,
-                  Bootstrap, jQuery
-                </p>
-                <p className="ml-2">• Backend: Node.js, Express.js</p>
-                <p className="ml-2">• Database: MongoDB</p>
-                <p className="ml-2">• Version Control: Git</p>
-                <p className="ml-2">• IDEs/Editors: Visual Studio Code</p>
-                <p className="ml-2">• Collaboration: Slack</p>
-              </div>
-              <div className="mt-4 flex-col gap-1">
+              <div className="flex-col border-r border-l border-b gap-1 p-5">
                 <p className="font-semibold">5. Key Achievements:</p>
                 <p className="ml-2">
                   • Successfully delivered multiple frontend components ahead of
