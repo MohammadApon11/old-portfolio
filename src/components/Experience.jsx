@@ -18,15 +18,14 @@ const Experience = () => {
           <a
             href="https://solutya.com/"
             target="blank"
-            className="w-[100%] px-[24px] py-12 mt-10 mb-[3px] mr-1 transition-all duration-300 rounded-md group flex items-start gap-5 shadow-sm shadow-[#28e98c] group"
+            className="w-[100%] max-md:px-5 px-[24px] max-md:py-6 py-12 mt-10 mb-[3px] mr-1 transition-all duration-300 rounded-md group flex items-start gap-5 shadow-sm shadow-[#28e98c] group"
           >
             <button className="bg-black w-[40px] p-3 rounded-[50%] group-hover:bg-[#28e98c] border border-[hsla(0,0%,100%,.1)] group-hover:text-black transition-all duration-300 max-mobile:hidden block">
               <GoArrowUpRight />
             </button>
             <div className="text-gray-300">
-              <span>July 2023 - March 2024</span>
-              <h3 className="text-3xl mt-3">Web Developer</h3>
-              <p className="text-[16px] mt-1">Solutya Pvt. Ltd.</p>
+              <h3 className="text-3xl">Solutya Pvt. Ltd.</h3>
+              <p className="mt-2 text-xl">Software Engineer | July 2023 - March 2024</p>
               <p className="mt-4">
                 - I've completed three successful web projects with them
                 MERN-stack based, one of which is NFT Marketplace, where my
@@ -36,8 +35,8 @@ const Experience = () => {
                 (react + node + mongoDB). And the third project is the employee
                 management system where I worked as a project leader (nextjs).
               </p>
-              <div className="grid grid-cols-2 border mt-4">
-                <div className="flex flex-col gap-1 border-r border-b p-5">
+              <div className="mobile:grid grid-cols-2 border mt-4">
+                <div className="flex flex-col gap-1 border-r border-b max-md:p-3 p-5">
                   <p className="font-semibold">1. Frontend Development:</p>
                   <p className="ml-2">
                     • Developed responsive and user-friendly web interfaces
@@ -52,7 +51,7 @@ const Experience = () => {
                     performance for various devices.
                   </p>
                 </div>
-                <div className="flex-col gap-1 border-b p-5">
+                <div className="flex-col gap-1 border-b max-md:p-3 p-5">
                   <p className="font-semibold">2. Backend Development:</p>
                   <p className="ml-2">
                     • Assisted in building RESTful APIs using Node.js and
@@ -67,7 +66,7 @@ const Experience = () => {
                     generation and user authentication.
                   </p>
                 </div>
-                <div className="flex-col gap-1 border-r p-5">
+                <div className="flex-col gap-1 border-r max-md:p-3 p-5">
                   <p className="font-semibold">3. Continuous Learning:</p>
                   <p className="ml-2">
                     • Stayed updated with the latest web development trends and
@@ -82,7 +81,7 @@ const Experience = () => {
                     in areas like React.js and Redux.
                   </p>
                 </div>
-                <div className="flex-col gap-1 p-5">
+                <div className="flex-col gap-1 max-md:p-3 p-5">
                   <p className="font-semibold">
                     4. Tools and Technologies Used:
                   </p>
@@ -98,7 +97,7 @@ const Experience = () => {
                   <p className="ml-2">• Collaboration: Slack</p>
                 </div>
               </div>
-              <div className="flex-col border-r border-l border-b gap-1 p-5">
+              <div className="flex-col border-r border-l border-b gap-1 max-md:p-3 p-5">
                 <p className="font-semibold">5. Key Achievements:</p>
                 <p className="ml-2">
                   • Successfully delivered multiple frontend components ahead of
